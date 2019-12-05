@@ -10,27 +10,42 @@ body {
 }
 
 .divCalculator {
-  width: 60%;
+  display: flex;
+  flex-flow: column;
+  width: 40%;
   height: 60%;
-  color: red;
+  color: #B22222;
+  font-weight: bold;
+  font-size: 12pt;
+  font-family: "Comic Sans MS";
   border: 5px solid #B22222;
+  border-radius: 10px;
   margin-top: 5%;
+  align-items: center;
+  animation: pulse 5s 1;
 }
 
 .divResult {
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
   width: 98%;
-  height: 50px;
   border: 3px solid black;
+  border-radius: 10px;
   background-color: rgba( 178, 34, 34, 0.8);
   color: black;
   margin-top: 10px;
   margin-bottom: 10px;
+  padding: 5px;
   justify-content: flex-end;
   align-items: center;
   font-family: "Comic Sans MS";
   font-size: 18pt;
+
+}
+
+/* не знаю как сделать анимацию при нажатии кнопки равно */
+.divResult:hover {
+  animation: rotate 3s 1;
 }
 
 .divButtons {
@@ -44,6 +59,7 @@ body {
   background-color: rgba(0, 0, 0, 0.9);
   padding-top: 10px;
   padding-bottom: 10px;
+  width: 100%;
   }
 
 .divButtons > button {
@@ -68,23 +84,50 @@ body {
   font-family: "Comic Sans MS";
 }
 
-.clear {
+#buttonClear {
   grid-column: 5 / 7;
   width: 120px;
 }
 
 .divHistory {
-  display: flex;
-  flex-flow: column;
+  display: none;
+  flex-flow: row;
   width: 98%;
-  height: 50px;
   border: 3px solid black;
+  border-radius: 10px;
   background-color: rgba( 178, 34, 34, 0.9);
   color: black;
   margin-top: 10px;
   margin-bottom: 10px;
+  padding: 5px;
   justify-content: flex-end;
   align-items: center;
   font-family: "Comic Sans MS";
   font-size: 18pt;
+}
+
+/* не знаю как сделать чтобы появлялся блок при нажатии на hist */
+.divHistory: hover button "hist" {
+  display: flex;
+  flex-flow: row;
+  width: 98%;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: rgba( 178, 34, 34, 0.9);
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Comic Sans MS";
+  font-size: 18pt;
+}
+
+@keyframes pulse {
+  0% { opacity: 0}
+}
+
+@keyframes rotate {
+  0% {transform: rotate(360deg);}
 }
