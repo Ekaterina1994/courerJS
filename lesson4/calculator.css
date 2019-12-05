@@ -1,0 +1,90 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("backgroundImage.jpeg");
+  background-size: 100%;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divCalculator {
+  width: 60%;
+  height: 60%;
+  color: red;
+  border: 5px solid #B22222;
+  margin-top: 5%;
+}
+
+.divResult {
+  display: flex;
+  flex-flow: column;
+  width: 98%;
+  height: 50px;
+  border: 3px solid black;
+  background-color: rgba( 178, 34, 34, 0.8);
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Comic Sans MS";
+  font-size: 18pt;
+}
+
+.divButtons {
+  display: grid;
+  grid-template-columns: 60px 60px 60px 60px 60px 60px;
+  grid-template-rows: auto 60px 60px 60px 60px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+
+.divButtons > button {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #B22222;
+  color: white;
+  border: 2px solid white;
+  font-family: "Comic Sans MS";
+}
+
+.divButtons > button:hover {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: black;
+  color: #B22222;
+  border: 3px solid #B22222;
+  font-weight: bold;
+  font-size: 14pt;
+  font-family: "Comic Sans MS";
+}
+
+.clear {
+  grid-column: 5 / 7;
+  width: 120px;
+}
+
+.divHistory {
+  display: flex;
+  flex-flow: column;
+  width: 98%;
+  height: 50px;
+  border: 3px solid black;
+  background-color: rgba( 178, 34, 34, 0.9);
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Comic Sans MS";
+  font-size: 18pt;
+}
