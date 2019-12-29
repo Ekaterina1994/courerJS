@@ -87,7 +87,7 @@ body {
   line-height: 0pt;
   align-items: center;
   justify-content: flex-end;
-  margin-top: -30px;
+  margin-top: -25px;
   padding: 0px;
 }
 
@@ -166,4 +166,71 @@ body {
   justify-content: flex-end;
   margin: 0px;
   padding: 0px;
+}
+
+.afterFooter {
+  display: flex;
+  flex-flow: row;
+  width: 90%;
+  justify-content: space-around;
+  padding-top: 1%;
+}
+
+.rights {
+  display: flex;
+  flex-flow: column;
+  width: 20%;
+  text-align: left;
+  font-size: 7pt;
+}
+
+.socialIcons {
+  display: flex;
+  flex-flow: row;
+  width: 20%;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 1%;
+}
+
+.img {
+  width: 20px;
+  height: 20px;
+}
+
+.nothing {
+  display: flex;
+  flex-flow: column;
+  width: 5%;
+}
+
+.iconsAndText {
+  display: flex;
+  flex-flow: row;
+  width: 25%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 8pt;
+  margin: 0px;
+}
+
+.phonesAndImg {
+  display: flex;
+  flex-flow: row;
+  width: 15%;
+  padding-top: 1%;
+}
+
+.number {
+  display: flex;
+  flex-flow: column;
+  font-size: 6pt;
+  line-height: 0;
+}
+
+.number2 {
+  display: flex;
+  flex-flow: column;
+  line-height: 0;
+  font-size: 6pt;
 }
